@@ -19,7 +19,7 @@ form.addEventListener('submit', (event) => {
     const weightInG = kg * 1000;
     const weightInOz = Math.round(kg * 35.274 * 100) / 100;
     const output = document.getElementById('output');
-    output.innerText = `${weightInKg} kg. is equal ${weightInLb} lb, ${weightInG} grams, ${weightInOz} Oz`;
+    output.textContent = `${weightInKg} kg. is equal ${weightInLb} lb, ${weightInG} grams, ${weightInOz} Oz`;
     output.classList('#output');
   };
   form.reset();
