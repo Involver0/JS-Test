@@ -59,3 +59,29 @@
   border-radius: 5px;
   background-color: #fff;
 }
+
+/* ADDED CLASSES */
+
+.remove {
+  display: none;
+}
+
+#output {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 1rem 0.5rem;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #dfdfdf;
+  box-shadow: 10px 10px 24px -9px rgba(88, 88, 88, 0.75);
+}
+
+.card img {
+  width: 300px;
+  border-radius: 5px;
+}
