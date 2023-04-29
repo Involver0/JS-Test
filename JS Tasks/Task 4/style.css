@@ -27,3 +27,16 @@
   margin-top: 50px;
   color: #333;
 }
+
+#output {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #ddd;
+  border-radius: 0.5rem;
+}
