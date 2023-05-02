@@ -27,11 +27,12 @@ const renderCarBrands = (carBrands) => {
     return console.log('data does not exist and output is not exist');
   }
   carBrands.forEach((carBrand) => {
+    // Element creation
+    const cardEl = document.createElement('div');
+    const headingEl = document.createElement('h3');
+    const ulEl = document.createElement('ul');
+    cardEl.append(headingEl, ulEl);
     for (i = 0; i <= carBrand.models.length; i++) {
-      // Element creation
-      const cardEl = document.createElement('div');
-      const headingEl = document.createElement('h3');
-      const ulEl = document.createElement('ul');
       let liEl = document.createElement('li');
 
       // Assigning
@@ -41,7 +42,6 @@ const renderCarBrands = (carBrands) => {
       cardEl.classList = 'card';
       // Append
       ulEl.appendChild(liEl); // nesugalvoju kaip cia su appendinti kad sudetu kelis i viena
-      cardEl.append(headingEl, ulEl);
       output.append(cardEl);
     }
   });
